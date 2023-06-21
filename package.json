@@ -1,0 +1,31 @@
+{
+  "name": "cli-ml-tools",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "sum-cli": "./lib/index.js"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "nodemon --watch 'lib/**/*.js'",
+    "global": "npm i -g"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xenova/transformers": "^2.2.0",
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^10.0.1",
+    "dotenv": "^16.1.4",
+    "figlet": "^1.6.0",
+    "node": "^20.2.0",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.6"
+  }
+}
