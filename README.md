@@ -1,5 +1,6 @@
 # cli-ml-tools
-A mini cli tool to summarize text and get sentiment scores using pre-trained Machine Learning models
+A mini cli tool to summarize text and get sentiment scores using pre-trained Machine Learning models.
+The pipeline runs in the browser and does not rely on an external server.
 
 ```
 
@@ -21,6 +22,10 @@ Options:
   
   ```
   
+## How it works
+Uses transformer.js library to build a pipeline on a pre-trained and host models from huggingface.co.
+The first run for a summarization or classification will take a couple of seconds as the model is compiling but speeds up on subsequent runs.
+
 ## Set-up locally:
 
 `git checkout master`
@@ -32,7 +37,9 @@ Options:
 `npm run global`
 
 To get summarization:
-`sum-cli -s "Some long and complicated text here"`
+`sum-cli -s "Apple has filed an appeal to the International Trade Commission’s decision to ban U.S. sales of Watch Series 9 and Watch Ultra 2 models, court records show. Additionally, the company is requesting an emergency stay on the ban for at least two weeks until a decision is made on redesigned versions of the banned models.
+
+“We strongly disagree with the USITC decision and resulting exclusion order, and are taking all measures to return Apple Watch Series 9 and Apple Watch Ultra 2 to customers in the U.S. as soon as possible,” Apple said in a statement to Reuters on Tuesday. Apple did not immediately respond to The Verge’s request for comment."`
 
 To get sentiment score: 
 `sum-cli -S "I love coding"`
