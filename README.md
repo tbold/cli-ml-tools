@@ -1,6 +1,5 @@
 # cli-ml-tools
 A mini cli tool to summarize text and get sentiment scores using pre-trained Machine Learning models
-summarize-texts
 
 ```
 
